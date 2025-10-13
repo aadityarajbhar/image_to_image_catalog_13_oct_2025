@@ -1,0 +1,2 @@
+C:/Users/aditya/Desktop/image to image/Image_to_image_catalog_app-main/android/app/.cxx/Debug/3o1e5l3g/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/aditya/Desktop/image to image/Image_to_image_catalog_app-main/android/app/.cxx/Debug/3o1e5l3g/armeabi-v7a/CMakeFiles/rebuild_cache.dir
