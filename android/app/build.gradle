@@ -131,7 +131,10 @@ android {
     namespace "com.techflux.imagetoimagecatalog"
     compileSdkVersion 35
 
-    ndkVersion "36.1"
+    ndkVersion "26.1.10909125"  // whichever exact r28+ you have installed
+
+
+    // ndkVersion "26.1.10909125"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

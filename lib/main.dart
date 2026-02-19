@@ -75,39 +75,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return UpgradeAlert(
-    //   upgrader: Upgrader(
-    //     storeController: UpgraderStoreController(
-    //       onAndroid: () => UpgraderPlayStore(),
-    //       oniOS: () => UpgraderAppStore(),
-    //     ),
-    //     debugLogging: true, // Enable for debugging
-    //     debugDisplayAlways: true, // Force display in debug mode for testing
-    //     // minAppVersion: '1.23.0+25',
-    // ),
-    return MaterialApp(
-      title: 'Image To Image Catalog',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: AppColors().primary),
-        // textTheme: GoogleFonts.manropeTextTheme(), // Uncomment if needed
-        scaffoldBackgroundColor: Colors.white,
-        useMaterial3: true,
-      ),
-      home: UpgradeAlert(
-        dialogStyle: UpgradeDialogStyle.cupertino,
-        // showIgnore: false,
-        // showLater: false,
-        // barrierDismissible: false,
-        upgrader: Upgrader(
-          storeController: UpgraderStoreController(
-            onAndroid: () => UpgraderPlayStore(),
-            oniOS: () => UpgraderAppStore(),
-          ),
-          debugLogging: true,
-          debugDisplayAlways: true, // force dialog for testing
+    return UpgradeAlert(
+      barrierDismissible: false,
+      upgrader: Upgrader(
+        storeController: UpgraderStoreController(
+          onAndroid: () => UpgraderPlayStore(),
+          oniOS: () => UpgraderAppStore(),
         ),
-        child: const SplashScreen(),
+        durationUntilAlertAgain: Duration.zero,
+      ),
+      child: MaterialApp(
+        title: 'Image To Image Catalog',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: AppColors().primary),
+          scaffoldBackgroundColor: Colors.white,
+          useMaterial3: true,
+        ),
+        home: const SplashScreen(),
       ),
     );
   }

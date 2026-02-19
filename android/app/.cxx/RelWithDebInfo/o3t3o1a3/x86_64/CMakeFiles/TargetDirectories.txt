@@ -1,0 +1,2 @@
+C:/Users/aditya/Desktop/image to image/Image_to_image_catalog_app-main/android/app/.cxx/RelWithDebInfo/o3t3o1a3/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/aditya/Desktop/image to image/Image_to_image_catalog_app-main/android/app/.cxx/RelWithDebInfo/o3t3o1a3/x86_64/CMakeFiles/rebuild_cache.dir
